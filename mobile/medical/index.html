@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Amey Medical - Sachi Hospital's Medical</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/home">Sachi Hospital</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/mobile/options" style="font-size: 55px;"><b>☰</b></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="text">
+    <center>
+      <p>
+      <h2>Amey Medical</h2>
+      <img src="https://cdn.pixabay.com/photo/2014/02/03/11/31/medications-257336_960_720.jpg" width="400px">
+      <h3>
+        2000+ Tablets Available <br><br> Safely Maintained Not Expired <br><br> Temperature control to temperature
+        control required
+        medicines <br><br> All types of operation items available here <br><br> Billing Will Be Done & Patient will
+        recieve reciept <br><br>
+        Tablets/Syrups/Capsules/Injections etc are available here <br><br> Amey Medical is located just below Sachi
+        Hospital, so if
+        you want to visit Amey Medical go through the <a href="https://goo.gl/maps/FpRkCSrqeJ2etjHC7"
+          style="color: blue;" target="_blank">route of Sachi Hospital</a>
+      </h3>
+    </center>
+  </div>
+
+
+
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 20) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      console.log("Mobile Device");
+    } else {
+      window.open("/ameymedical", "_self");
+    }
+  </script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>

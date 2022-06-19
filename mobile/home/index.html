@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Sachi Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/home">Sachi Hospital</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/mobile/options" style="font-size: 55px;"><b>☰</b></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home">
+    <center> <br> <br> <br> <br> <br> <br> <br> <br><button class="btb"
+        onclick="window.open('https://goo.gl/maps/1wvkQXw4U6vuek9D8','_blank')" style="float: right;"><i
+          class='bx bx-current-location'></i> Visit Hospital</button> </center>
+  </section>
+  <div class="text">
+    <p>
+    <h2>About Us</h2>
+    <p>
+      Since last 1 decade we are keeping our promise of giving quality service. Sachi Hospital’s successful journey has
+      led it to acquire an iconic stature as a major landmark in Adilabad, and the hospital is poised to become a best,
+      trustworthy & affordable health care destination in region. People trust us because of the strong relationships
+      we’ve built with them over the years. Constantly pushing our horizons to excellence, we are continuously seeking
+      solutions to provide better patient care by improving our overall facilities of hospital management and at the
+      same
+      time ensuring control on the patient cost.
+    </p>
+    <br>
+    <h2>Vision</h2>
+    <p>
+      To be a trusted, people-centric integrated healthcare system as a model for global healthcare
+    </p>
+    <br>
+    <h2>Mission</h2>
+    <p>
+      To provide the best and cost-effective care, accessible to every patient through integrated clinical practice,
+      education and research.
+    </p>
+    </p>
+  </div>
+
+
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 20) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      console.log("Mobile Device");
+    }else{
+      window.open("/home","_self");
+    }
+  </script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
