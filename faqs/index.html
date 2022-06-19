@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ's - Sachi Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/home">Sachi Hospital</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/ameymedical">Medical</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/details">Details</a></li>
+        <li><a href="/blogs">Blogs</a></li>
+        <li><a href="/faqs">FAQ's</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
+        <li><a href="/visit">Visit</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="home"></section>
+
+  <div class="text">
+    <section id="faqs" class="home-section">
+      <center>
+        <div class="accordion">
+          <div class="accordion-content">
+            <header>
+              <span class="title">Do you give services at night hours?</span>
+              <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <p class="description">
+              No, our clinic will be closed at 8:00 PM.
+            </p>
+          </div>
+
+          <div class="accordion-content">
+            <header>
+              <span class="title">Do you accept I.C.U cases?</span>
+              <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <p class="description">
+              No, we are not having I.C.U facility.
+            </p>
+          </div>
+          <div class="accordion-content">
+            <header>
+              <span class="title">Do you accept digital payments?</span>
+              <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <p class="description">
+              Yes, we accept it.
+            </p>
+          </div>
+          <div class="accordion-content">
+            <header>
+              <span class="title">Any Of Your Doctor Speaks Marathi?</span>
+              <i class="fa-solid fa-plus"></i>
+            </header>
+
+            <p class="description">
+              Yes 2/2(All) Doctors speak marathi
+            </p>
+          </div>
+        </div>
+      </center>
+    </section>
+  </div>
+
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 20) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      window.open("/mobile/faqs", "_self");
+    } else {
+      console.log("myau");
+    }
+  </script>
+
+</body>
+<script src="sketch.js"></script>
+
+</html>
