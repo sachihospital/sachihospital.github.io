@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./err.jpg">
+</head>
+<body>
+      <section>
+        <center>
+        <h1 style="font-size: 72px;">404</h1>
+        <br>
+        <h1 style="font-size: 42px;">Page Not Found</h1>
+        <br>
+        <a href="/home" target="_self" style="color: blue; font-size: 150%; text-decoration: underline;">Go to home</a>
+        </center>
+      </section>
+      <script>
+        let nav = document.querySelector("nav");
+        window.onscroll = function () {
+          if (document.documentElement.scrollTop > 20) {
+            nav.classList.add("sticky");
+          } else {
+            nav.classList.remove("sticky");
+          }
+        }
+      </script>
+</body>
+</html>
