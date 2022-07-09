@@ -118,3 +118,21 @@ h2 {
   transition: all 0.5s ease;
   color: #99D9D9;
 }
+
+.slideroo {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 10vh;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #99D9D9;
+  color: black;
+  font-size: 45px;
+}
+
+.slideroo:hover {
+  transition: all 0.5s ease;
+  color: #99D9D9;
+  background: black;
+}
