@@ -89,16 +89,16 @@ h2{
   color: black;
   font-size: 20px;
   height: 50px;
-  border-radius: 12px;
+  border-radius: 5px;
   outline: none;
   border: none;
   background: #99D9D9;
   cursor: pointer;
+  transition: background 0.5s;
 }
 
 .btb:hover {
   background: black;
-  transition: all 0.5s ease;
   color: #99D9D9;
 }
 
@@ -112,10 +112,10 @@ h2{
   background: #99D9D9;
   color: black;
   font-size: 25px;
+  transition: background 0.5s;
 }
 
 .slideroo:hover {
-  transition: all 0.5s ease;
   color: #99D9D9;
   background: black;
 }
