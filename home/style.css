@@ -95,6 +95,7 @@ h2{
   background: #99D9D9;
   cursor: pointer;
   transition: background 0.5s;
+  margin-right: 10px;
 }
 
 .btb:hover {
